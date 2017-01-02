@@ -1,6 +1,20 @@
 ##去豆瓣获得热门高分电影的URL
 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=rank&page_limit=20&page_start=0
 
+    #豆瓣上电影的评分的ＵＲＬ分析
+···
+    doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=rank&page_limit='+str(count)+'&page_start='+str(start)
+    
+    doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=rank&page_limit=20&page_start=0'
+
+    参数的解释：
+    'type=movie'+　#类型是电影
+    '&tag=%E7%83%AD%E9%97%A8'+ #这个是电影的标签,应该是‘热门’这两个字，我们可以去百度查一下
+    '&sort=rank'+#按照rank进行评分，这个rank应该就是用户的打分
+    '&page_limit=20'+#每一页的限制查询数量，我想我们可以改，来改改试试。。。
+    '&page_start=0'
+···
+
 已经可以初步下载一些电影的信息了
 
 ##欢迎下载本代码：
@@ -21,9 +35,10 @@ https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sor
     用更优雅的方式去构建请求URL.
     还是做这一步吧，这一步做好后做第四步会更简单点儿
     搞定了
-以下几步还没做。。。
-##第六步：上传一下代码
 
+##第六步：上传一下代码
+doing
+以下几步还没做。。。
 ##第七步：清理一下代码。
 写的太恶心了。要恶心吐了
 ##第八步：添加多些查询。

@@ -1,52 +1,41 @@
 # -*- coding: utf-8 -*-
 import requests
 
-
-
+"""
+函数名GetMovies(参数1指定从多少位开始获得数据，参数2指定一次请求获得电影的数量)
+好业余的注释，也只能这样了。。。。
+"""
 def GetMovies(start,count,movie_type=u'热门'):
-    
-    #豆瓣上电影的评分的ＵＲＬ之一
-    """
-    doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=rank&page_limit='+str(count)+'&page_start='+str(start)
-    
-    doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=rank&page_limit=20&page_start=0'
-    """
+
     doubanUrl = 'https://movie.douban.com/j/search_subjects'
-    print('url:',doubanUrl)
-    """
-    参数的解释：
-    'type=movie'+　#类型是电影
-    '&tag=%E7%83%AD%E9%97%A8'+ #这个是电影的标签,应该是‘热门’这两个字，我们可以去百度查一下
-    '&sort=rank'+#按照rank进行评分，这个rank应该就是用户的打分
-    '&page_limit=20'+#每一页的限制查询数量，我想我们可以改，来改改试试。。。
-    '&page_start=0'
-    """
-    
-    payload = {'type': 'movie',
-               'tag' : movie_type,
-               'sort':'rank',
+    payload = {'type': 'movie',# query type
+               'tag' : movie_type, #movie type
+               'sort':'rank',#你懂的，按照评分排序
                'page_limit': count,
                'page_start':start
                }
-
-#        r = requests.get('http://httpbin.org/get', params=payload)
-
+    #写demo的人都比较ＮＢ，所以就是不加try catch.建议还是加一下
     r = requests.get(doubanUrl,params=payload)
-    print(r.url)
+    #print(r.url)#如果不确定这个url构建的是否正确，你就打开这句话，让他输出。。。
     data = r.json()
     
-    print(u'查到了你想要的数据。。')
+    print(u'竟然没有崩溃的情况下就查到了你想要的数据，你是不是很开森。。')
+    
+    #下面的代码是进行文件的处理，第一次创建文件，第二次进行文件追加
+    #虽然不优雅，但是可以用。。。
     fileMode = None
     if(start is 0):
         fileMode = "w"
     else:
         fileMode = "a+"
+        
     if len(data) == 1:
         subjects = data['subjects']
         
         fileHandler = open('豆瓣'+movie_type+'电影.txt',fileMode)
         print('一共查询到:', len(subjects),'部电影。')
         #开始解析查询到的电影信息
+        #每一个电影格式的说明
         """
         {'cover': 'https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2315672647.jpg',
         cover 电影的封面 
@@ -66,15 +55,31 @@ def GetMovies(start,count,movie_type=u'热门'):
             print(str_line)
             fileHandler.write(str_line)
             #这个时候基本上可以获得一些我们想要的信息了，但是，我并不满足。多获得一些电影试试
+        #关闭文件处理句柄，句柄就是。。。神经病啊，我是随口说的而已，其实就是打开的文件，win下的程序猿莫名的会说句柄
         fileHandler.close()
-            
-#我们将上面的代码封装成一个函数，用来获取我们想要的电影
-#函数名GetMovies(参数1指定从多少位开始获得，参数2指定一次获得电影的数量)
+
 #额。。。备份一下代码，如果想玩的话，一会儿自己可以下载一下自己本地跑一下
 def main():
     #萌萌的查询200个数据试一下
-    GetMovies(0,100,u'热门') #现在只是测试调用，test：OK!
-    GetMovies(0,100,u'豆瓣高分') 
+    GetMovies(0,200,u'热门') #查询豆瓣热门电影，test：OK!
+    GetMovies(0,200,u'豆瓣高分')#查询豆瓣高分电影
+    GetMovies(0,200,u'科幻')#这个我还真没试过，先跑跑程序再说，反正电脑不会蓝屏。。
+    GetMovies(0,200,u'悬疑')
+    GetMovies(0,200,u'喜剧')
+    
+    #我要吃饭了。。。。10%。。。
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #以下是胡说八道，反正说的都已经不是很重要了。。。
     #现在开始动态关联
     #GetMovies(1000,1000)
     

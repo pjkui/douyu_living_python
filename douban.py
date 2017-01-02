@@ -66,7 +66,23 @@ def main():
     GetMovies(0,200,u'科幻')#这个我还真没试过，先跑跑程序再说，反正电脑不会蓝屏。。
     GetMovies(0,200,u'悬疑')
     GetMovies(0,200,u'喜剧')
-    
+    #GetMovies(0,200,u'热门')
+    GetMovies(0,200,u'最新')
+    GetMovies(0,200,u'经典')
+    GetMovies(0,200,u'可播放')
+    #GetMovies(0,200,u'豆瓣高分')
+    GetMovies(0,200,u'冷门佳片')
+    GetMovies(0,200,u'华语')
+    GetMovies(0,200,u'欧美')
+    GetMovies(0,200,u'韩国')
+    GetMovies(0,200,u'日本')
+    GetMovies(0,200,u'动作')
+    GetMovies(0,200,u'喜剧')
+    GetMovies(0,200,u'爱情')
+    #GetMovies(0,200,u'科幻')
+    GetMovies(0,200,u'悬疑')
+    GetMovies(0,200,u'恐怖')
+    GetMovies(0,200,u'文艺')
     
     
     

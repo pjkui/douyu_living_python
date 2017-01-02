@@ -1,8 +1,7 @@
-##去豆瓣获得热门高分电影的URL
+##获得豆瓣各种分类的高分电影
 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=rank&page_limit=20&page_start=0
 
-    #豆瓣上电影的评分的ＵＲＬ分析
-···
+    #豆瓣ＵＲＬ分析
     doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=rank&page_limit='+str(count)+'&page_start='+str(start)
     
     doubanUrl = 'https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=rank&page_limit=20&page_start=0'
@@ -18,7 +17,6 @@ https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sor
 这个ＡＰＩ是获取某一个指定ＩＤ的摘要信息，感觉没有需要的，但是放到这儿，万一哪天要用到呢
 https://movie.douban.com/j/subject_abstract?subject_id=25921812
 
-···
 
 已经可以初步下载一些电影的信息了
 

@@ -61,29 +61,29 @@ def GetMovies(start,count,movie_type=u'热门'):
 #额。。。备份一下代码，如果想玩的话，一会儿自己可以下载一下自己本地跑一下
 def main():
     #萌萌的查询200个数据试一下
-    # GetMovies(0,200,u'热门') #查询豆瓣热门电影，test：OK!
-    # GetMovies(0,200,u'豆瓣高分')#查询豆瓣高分电影
-    # GetMovies(0,200,u'科幻')#这个我还真没试过，先跑跑程序再说，反正电脑不会蓝屏。。
-    # GetMovies(0,200,u'悬疑')
-    # GetMovies(0,200,u'喜剧')
-    # #GetMovies(0,200,u'热门')
-    # GetMovies(0,200,u'最新')
-    # GetMovies(0,200,u'经典')
-    # GetMovies(0,200,u'可播放')
-    # #GetMovies(0,200,u'豆瓣高分')
-    # GetMovies(0,200,u'冷门佳片')
-    # GetMovies(0,200,u'华语')
-    # GetMovies(0,200,u'欧美')
-    # GetMovies(0,200,u'韩国')
-    # GetMovies(0,200,u'日本')
-    # GetMovies(0,200,u'动作')
-    # GetMovies(0,200,u'喜剧')
-    # GetMovies(0,200,u'爱情')
-    # #GetMovies(0,200,u'科幻')
-    # GetMovies(0,200,u'悬疑')
-    # GetMovies(0,200,u'恐怖')
-    # GetMovies(0,200,u'文艺')
-    # GetMovies(0,200,u'动画')
+    GetMovies(0,200,u'热门') #查询豆瓣热门电影，test：OK!
+    GetMovies(0,200,u'豆瓣高分')#查询豆瓣高分电影
+    GetMovies(0,200,u'科幻')#这个我还真没试过，先跑跑程序再说，反正电脑不会蓝屏。。
+    GetMovies(0,200,u'悬疑')
+    GetMovies(0,200,u'喜剧')
+    #GetMovies(0,200,u'热门')
+    GetMovies(0,200,u'最新')
+    GetMovies(0,200,u'经典')
+    GetMovies(0,200,u'可播放')
+    #GetMovies(0,200,u'豆瓣高分')
+    GetMovies(0,200,u'冷门佳片')
+    GetMovies(0,200,u'华语')
+    GetMovies(0,200,u'欧美')
+    GetMovies(0,200,u'韩国')
+    GetMovies(0,200,u'日本')
+    GetMovies(0,200,u'动作')
+    GetMovies(0,200,u'喜剧')
+    GetMovies(0,200,u'爱情')
+    #GetMovies(0,200,u'科幻')
+    GetMovies(0,200,u'悬疑')
+    GetMovies(0,200,u'恐怖')
+    GetMovies(0,200,u'文艺')
+    GetMovies(0,200,u'动画')
     GetMovies(0,200,u'纪录片')
     
     

@@ -14,8 +14,8 @@ https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sor
     '&page_start=0'
 
 
-这个ＡＰＩ是获取某一个指定ＩＤ的摘要信息，感觉没有需要的，但是放到这儿，万一哪天要用到呢
-https://movie.douban.com/j/subject_abstract?subject_id=25921812
+    这个ＡＰＩ是获取某一个指定ＩＤ的摘要信息，感觉没有需要的，但是放到这儿，万一哪天要用到呢
+    https://movie.douban.com/j/subject_abstract?subject_id=25921812
 
 
 已经可以初步下载一些电影的信息了
@@ -44,5 +44,8 @@ doing
 以下几步还没做。。。
 ##第七步：清理一下代码。
 写的太恶心了。要恶心吐了
+已经清理
 ##第八步：添加多些查询。
-我要多多多的信息、、、、
+ 添加了：热门  最新  经典  可播放  豆瓣高分  冷门佳片  华语  欧美  韩国 日本  动作  喜剧  爱情  科幻  悬疑  恐怖  动画
+
+ ##第九步 基本完成了

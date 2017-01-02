@@ -13,6 +13,11 @@ https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sor
     '&sort=rank'+#按照rank进行评分，这个rank应该就是用户的打分
     '&page_limit=20'+#每一页的限制查询数量，我想我们可以改，来改改试试。。。
     '&page_start=0'
+
+
+这个ＡＰＩ是获取某一个指定ＩＤ的摘要信息，感觉没有需要的，但是放到这儿，万一哪天要用到呢
+https://movie.douban.com/j/subject_abstract?subject_id=25921812
+
 ···
 
 已经可以初步下载一些电影的信息了

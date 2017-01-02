@@ -67,7 +67,7 @@ def main():
     GetMovies(0,200,u'悬疑')
     GetMovies(0,200,u'喜剧')
     
-    #我要吃饭了。。。。10%。。。
+    
     
     
     
